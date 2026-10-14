@@ -1,0 +1,36 @@
+{
+  "config": {
+    "seed": 20260815,
+    "n_particles": 48,
+    "n_features": 40,
+    "frequency_scale": 0.85,
+    "ridge_lambda": 0.08,
+    "final_time": 1.5,
+    "n_steps": 150,
+    "max_outer": 16,
+    "stop_tolerance": 1e-11,
+    "min_outer": 6
+  },
+  "actual_outer_steps": 16,
+  "collision_matrix": "A(z)=(|z|^2 I-z z^T)/(1+|z|^2)",
+  "score_model": "paired sine/cosine random Fourier features",
+  "score_solver": "exact Tikhonov empirical Hyvarinen normal equations",
+  "system_solver": "classical RK4 with linearly interpolated score coefficients",
+  "validation": {
+    "all_values_finite": true,
+    "outer_increment_reduction": 3.320002713296614e-10,
+    "fixed_point_defect_sup": 2.3864911317262846e-11,
+    "max_momentum_drift": 4.531581184534698e-16,
+    "max_energy_drift": 2.5839330675125893e-11,
+    "max_score_normal_equation_relative_residual": 3.219041131986961e-16,
+    "factorial_compatible_C_fit": 1.2023362554801584,
+    "checks": {
+      "increment_reduced_by_1e6": true,
+      "fixed_point_defect_below_1e-9": true,
+      "momentum_drift_below_1e-11": true,
+      "energy_drift_below_1e-7": true,
+      "score_normal_residual_below_1e-10": true
+    },
+    "passed": true
+  }
+}
