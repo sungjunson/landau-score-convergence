@@ -1,0 +1,50 @@
+{
+  "particle_number_sweep": {
+    "particle_counts": [
+      24,
+      48,
+      96
+    ],
+    "summary": [
+      {
+        "n_particles": 24,
+        "outer_steps": 16,
+        "initial_increment": 0.6389539839800378,
+        "last_increment": 3.4716292047917606e-10,
+        "fixed_point_defect_sup": 3.904077117455875e-11,
+        "factorial_compatible_C_fit": 1.2424749187071953
+      },
+      {
+        "n_particles": 48,
+        "outer_steps": 16,
+        "initial_increment": 0.6462765217164778,
+        "last_increment": 2.1456398056386044e-10,
+        "fixed_point_defect_sup": 2.3864911317262846e-11,
+        "factorial_compatible_C_fit": 1.2023362554801584
+      },
+      {
+        "n_particles": 96,
+        "outer_steps": 16,
+        "initial_increment": 0.6295315004185995,
+        "last_increment": 2.3958110102923504e-10,
+        "fixed_point_defect_sup": 2.6775945825248954e-11,
+        "factorial_compatible_C_fit": 1.2133303280033378
+      }
+    ]
+  },
+  "inexact_score_sweep": {
+    "amplitudes": [
+      0.0,
+      0.01,
+      0.02,
+      0.04,
+      0.08,
+      0.16
+    ],
+    "linear_fit_through_origin": 0.03680904709412449,
+    "linear_fit_R_squared": 0.9999997948601642,
+    "log_log_slope": 0.999618785727103,
+    "log_log_intercept": -3.3029615670267067,
+    "max_objective_gap_identity_error": 1.7997756063259374e-15
+  }
+}

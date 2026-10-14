@@ -1,0 +1,15 @@
+{
+  "baseline_steps": 150,
+  "waveform_to_monolithic_path_error_sup": 1.4902715013630917e-06,
+  "waveform_to_monolithic_terminal_error": 1.4338529625035882e-06,
+  "monolithic_max_score_normal_residual": 3.080300137502138e-16,
+  "monolithic_momentum_drift_sup": 3.0126308872686096e-16,
+  "monolithic_energy_drift_sup": 1.1659562204613394e-11,
+  "refinement_observed_order": 4.085486880141037,
+  "checks": {
+    "waveform_reference_error_below_2e-6": true,
+    "monolithic_score_residual_below_1e-10": true,
+    "monolithic_refinement_order_above_3p5": true
+  },
+  "passed": true
+}

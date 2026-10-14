@@ -1,0 +1,89 @@
+{
+  "scope": "Static deterministic empirical score minimization only; this is not a Coulomb, dynamic, mean-field, or simultaneous-limit test.",
+  "lambda_values": [
+    0.1,
+    0.03162277660168379,
+    0.01,
+    0.0031622776601683794,
+    0.001,
+    0.00031622776601683794,
+    0.0001,
+    3.1622776601683795e-05,
+    1e-05,
+    3.162277660168379e-06,
+    1e-06,
+    3.162277660168379e-07,
+    1e-07,
+    3.162277660168379e-08,
+    1e-08
+  ],
+  "asymptotic_fit_count": 7,
+  "finite_feature": {
+    "n_particles": 24,
+    "n_features": 4,
+    "gram_eigenvalues": [
+      0.7645153685184516,
+      0.8337538005999117,
+      1.0180079062648515,
+      1.3837229246167861
+    ],
+    "gram_min_eigenvalue": 0.7645153685184516,
+    "gram_condition": 1.809934739831707,
+    "unregularized_coefficient_norm": 0.3059892155981227,
+    "max_normal_equation_relative_residual": 5.594315114139762e-17
+  },
+  "gaussian_rkhs": {
+    "n_particles": 5,
+    "sigma": 0.55,
+    "training_points": [
+      -1.4,
+      -0.6,
+      0.1,
+      0.9,
+      1.5
+    ],
+    "kernel_gram_condition": 5.842169413147916,
+    "divergence_representer_h_norm": 0.46160878564361335,
+    "visible_component_h_norm": 0.38595729066180334,
+    "hidden_component_h_norm": 0.25321856323810776,
+    "hidden_energy_fraction": 0.3009143844145608,
+    "hidden_component_training_evaluation_residual": 6.071532165918825e-17,
+    "off_grid_probe": -2.01,
+    "hidden_component_at_probe": -0.14207983763182871,
+    "max_normal_equation_relative_residual": 4.675425734128277e-16,
+    "max_objective_stationarity_identity_error": 9.313225746154785e-10
+  },
+  "log_log_slopes": {
+    "finite_coefficient_error": 0.9999988537395511,
+    "gaussian_on_grid_error": 0.9999831570972877,
+    "gaussian_hidden_h_norm": -1.0000000000000004,
+    "gaussian_full_h_norm": -0.9999999987202309,
+    "gaussian_probe_abs_score": -0.9999960216209179,
+    "gaussian_negative_minimum_objective": -0.9999749431541576
+  },
+  "smallest_lambda_results": {
+    "finite_coefficient_error": 3.0315296321706485e-09,
+    "gaussian_on_grid_rms_error": 1.4927491215430856e-07,
+    "gaussian_full_h_norm": 25321856.323811103,
+    "gaussian_probe_abs_score": 14207984.253917854,
+    "gaussian_minimum_objective": -6411965.471939549
+  },
+  "validation": {
+    "passed": true,
+    "checks": {
+      "finite_gram_uniformly_coercive": true,
+      "finite_gram_condition_below_3": true,
+      "finite_error_has_first_order_slope": true,
+      "finite_normal_equations_solved": true,
+      "gaussian_kernel_gram_well_conditioned": true,
+      "gaussian_hidden_component_nontrivial": true,
+      "gaussian_hidden_component_vanishes_on_training_set": true,
+      "gaussian_training_values_have_first_order_limit": true,
+      "gaussian_full_norm_has_inverse_first_order_slope": true,
+      "gaussian_off_grid_score_has_inverse_first_order_slope": true,
+      "gaussian_objective_has_inverse_first_order_slope": true,
+      "gaussian_normal_equations_solved": true,
+      "gaussian_objective_identity_verified": true
+    }
+  }
+}
